@@ -15,6 +15,8 @@ public class ComparatorProgram {
 	        // Sort by rating : (1) Create an object of ratingCompare
 	        //                  (2) Call Collections.sort
 	        //                  (3) Print Sorted list
+	        
+	        
 	        System.out.println("Sorted by rating");
 	        RatingCompare ratingCompare = new RatingCompare();
 	        Collections.sort(list, ratingCompare);
