@@ -9,7 +9,9 @@ public class TreeMapProgs {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		/**
+		 * When ever we required Sorted Format of values then we can go for Map to TreeMap
+		 */
 		Map<Integer, String> treeMap = new TreeMap<>();
 
 		treeMap.put(123, "FFFFF");
@@ -19,7 +21,7 @@ public class TreeMapProgs {
 		treeMap.put(99, "ZZZZZZ");
 		System.out.println("Normal TreeMap output:: " + treeMap);
 		
-		// Traversing by using for and iterator
+		// Traversing by using for loop and iterator
 		
 		// SORTING By using Keys
 		for (Map.Entry entry : treeMap.entrySet()) {
