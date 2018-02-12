@@ -11,28 +11,34 @@ public class TreeMapProgs {
 		// TODO Auto-generated method stub
 
 		Map<Integer, String> treeMap = new TreeMap<>();
-		
+
 		treeMap.put(123, "FFFFF");
 		treeMap.put(321, "JJJJJJ");
 		treeMap.put(56, "OOOOOO");
 		treeMap.put(46, "LLLLLL");
 		treeMap.put(99, "ZZZZZZ");
-		System.out.println("Normal TreeMap output:: " +treeMap);
-		// Traversing by using for and iterator
-		// SORTING By using Keys
-		for(Map.Entry entry : treeMap.entrySet()) {
-			System.out.println("keys ::" + entry.getKey() + "=>" + "values :: " +entry.getValue() );
-		}
+		System.out.println("Normal TreeMap output:: " + treeMap);
 		
+		// Traversing by using for and iterator
+		
+		// SORTING By using Keys
+		for (Map.Entry entry : treeMap.entrySet()) {
+			System.out.println("keys ::" + entry.getKey() + "=>" + "values :: " + entry.getValue());
+		}
+
+		// Sorting By Using Iterator
+		System.out.println("*********************************************");
+		Iterator it = treeMap.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry entry = (Map.Entry) it.next();
+			System.out.println("Keys are " +entry.getKey() + "values are " +entry.getValue());
+		}
 		System.out.println("**********************************************");
 
-		// Sorting By Using Values and using Java 8 Features 
-		treeMap.entrySet().stream().sorted((k1 ,k2) -> k1.getValue().compareTo(k2.getValue()))
-		.forEach(k -> System.out.println(k.getKey() + ":" + k.getValue()));
-		
-		
-		
-		
+		// Sorting By Using Values and using Java 8 Features
+		treeMap.entrySet().stream().sorted((k1, k2) -> k1.getValue().compareTo(k2.getValue()))
+			.forEach(k -> System.out.println(k.getKey() + ":" + k.getValue()));
+
 		
 	}
 
