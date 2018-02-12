@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.StringJoiner;
-import java.util.stream.Collectors;
+import java.util.TreeMap;
 
 public class Java8Features {
 
@@ -111,7 +114,40 @@ public class Java8Features {
 		stringjoiner.add("putta");
 		
 		System.out.println("String joiner comes as:: "+stringjoiner);
-/** String Joiner Example Ends **/	}
+		
+/** String Joiner Example Ends **/
+		
+		HashMap<String, String> map = new HashMap<>();
+		map.put("1", "B");
+		map.put("7", "D");
+		map.put("6", "A");
+		
+		Map<String,String> treeMap = new TreeMap<>(map);
+		// Sorting Based on Keys
+		for(String str : treeMap.keySet()) {
+			System.out.println("values in sorting order"+str);
+		}
+		
+		// Sorting Based on Values
+		
+		
+		
+		for(Map.Entry<String, String> entry : map.entrySet()) {
+			System.out.println("Keys = " +entry.getKey() + " \t " + "Values = "  +entry.getValue());
+			
+		}
+		
+		Set<Map.Entry<String, String>> 	entrySet = map.entrySet();
+		for (Entry<String, String> entry : entrySet) {
+			
+			List sortedList = new ArrayList();
+			
+			System.out.println("Keys : " +entry.getKey() + "\t" + "Values : " +entry.getValue());
+			
+		}
+		
+		
+	}
 }
 
 

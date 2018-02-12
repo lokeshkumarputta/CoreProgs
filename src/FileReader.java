@@ -11,7 +11,7 @@ public class FileReader {
 
 	private static void printFile() throws IOException {
 
-		try(FileInputStream input = new FileInputStream("D:/Users/lputta/Desktop/velocity.log")){
+		try(FileInputStream input = new FileInputStream("D:/Users/lputta/Desktop/ids.txt")){
 			int data = input.read();
 			while(data != -1) {
 				System.out.println((char) data);
