@@ -10,7 +10,8 @@ public class TreeMapProgs {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/**
-		 * When ever we required Sorted Format of values then we can go for Map to TreeMap
+		 * Maintains Order and Sorting 
+		 * 
 		 */
 		Map<Integer, String> treeMap = new TreeMap<>();
 

@@ -9,7 +9,8 @@ public class LinkedListProgs {
 
 		/**
 		 * LinkedList allows for insertions and removals using iterators
-		 * LInkedlist can be searched forward and backward but it takes time
+		 * 
+		 * LinkedList can be searched forward and backward but it takes time
 		 */
 		
 		LinkedList<String> lList = new LinkedList();
@@ -19,25 +20,28 @@ public class LinkedListProgs {
 		lList.add("zzzzz");
 		System.out.println("Normal LinkedList values" +lList);
 		/*Add First and Last Element*/
-		lList.add(0, "jjjjjjj");
-		lList.add(5, "hhhhhhhh");
+		
 		lList.addFirst("bbbbbb");
 		lList.addLast("yyyyy");
 		
 		
 		System.out.println("after adding the LinkedList values" + lList);
-		/*Add First and Last Element*/
-		
 		
 		/*Remove first and last element*/
 		
 		lList.remove(0);
-		lList.remove(5);
+		lList.remove(4);
 		
 		System.out.println("After removing the linkedList values" + lList);
 		/* Add to a Position and remove from a position*/
 		
+		lList.add(0, "jjjjjjj");
+		lList.add(4, "hhhhhhhh");
 		
+		lList.remove(1);
+		lList.remove(2);
+		
+		System.out.println("After Add to a Position and remove from a position values" + lList);
 
 	}
 

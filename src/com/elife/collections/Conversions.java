@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-public class CollectionConversions {
+public class Conversions {
 
 	public static void main(String[] args) {
 

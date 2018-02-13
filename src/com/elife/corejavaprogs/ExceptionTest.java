@@ -3,6 +3,8 @@
  */
 package com.elife.corejavaprogs;
 
+import java.io.IOException;
+
 /**
  * @author Lokesh
  *
@@ -16,7 +18,7 @@ public class ExceptionTest {
 
 		ExceptionTest t = new ExceptionTest();
 		int i = t.method1();
-		System.out.println(1);
+		System.out.println(i);
 		
 	}
 
@@ -24,15 +26,17 @@ public class ExceptionTest {
 int method1() {
 	try{
 		System.out.println("try ");
+//		throw new IOException();
 		return 1;
 		
 	}catch (Exception e) {
-		System.out.println("E"+e);
+		System.out.println("E:::"+e);
+//		throw new IOException();
 		return 2;
 	}finally {
-		System.exit(0);
+//		System.exit(0);
 		System.out.println("F");
-		return 3;
+//		return 3;
 	}
 	}
 
