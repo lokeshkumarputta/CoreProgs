@@ -4,6 +4,7 @@ public class Demo {
 	static int i = 0;
 	
 	static int f1() {
+//		static int i = 0;	Inside the method we cant declare the static variables becoz static will load @ class loading.
 		i++;
 		return i;
 	}
