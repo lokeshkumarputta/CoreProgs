@@ -10,6 +10,9 @@ public class HashMapProgs {
 	/**
 	 * @param args
 	 */
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -26,9 +29,10 @@ public class HashMapProgs {
 		}
 		
 		// Iteration by Using Java8 Stream Feature
-		hashMap.entrySet().stream().forEach(output -> System.out.println("keys ::" + output.getKey() + "values ::" +output.getValue()));
+		hashMap.entrySet().stream()
+		.forEach(output -> System.out.println("keys ::" + output.getKey() + "values ::" +output.getValue()));
 		
-		// Sorting the HashMap values by USing TreeMap
+		// Sorting the HashMap values by Using TreeMap
 		
 		TreeMap<String, Integer> treeMap = new TreeMap<>();
 		for(Map.Entry entry : hashMap.entrySet()) {
