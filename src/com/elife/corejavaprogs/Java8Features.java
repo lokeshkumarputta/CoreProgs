@@ -38,8 +38,8 @@ public class Java8Features {
 			}
 
 		});
-		MyConsumer action = new MyConsumer();
-		li.forEach(action);
+
+		li.forEach(i -> System.out.println("using java8 foreach " +i));
 	
 	
 /** For Each Example Ends **/
@@ -67,7 +67,7 @@ public class Java8Features {
 		list.add("Lokesh3");
 		list.add("Lokesh4");
 		
-		li.forEach(n -> System.out.println(n));
+		list.forEach(n -> System.out.println("List of value :: " +n));
 		
 		// Sum of two variables by using lamda expression
 		TestInterface test = (int a,int b)-> {
