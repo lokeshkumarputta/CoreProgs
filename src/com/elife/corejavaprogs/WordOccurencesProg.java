@@ -3,7 +3,7 @@ package com.elife.corejavaprogs;
 import java.util.HashMap;
 import java.util.Set;
 
-public class CharOccurencesProg {
+public class WordOccurencesProg {
 
 	public static void main(String[] args) {
 		duplicateWords("Bread butter and bread");
