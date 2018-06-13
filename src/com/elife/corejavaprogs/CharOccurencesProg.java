@@ -12,9 +12,9 @@ public class CharOccurencesProg {
 		
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
-		System.out.println("Input given String is :" +sc);
+		System.out.println("Input given String is :" +input);
 		
-		if(sc == null) {
+		if(input == null) {
 			System.out.println("There is no input given plz pass the input");
 		}else {
 			String result = null;
