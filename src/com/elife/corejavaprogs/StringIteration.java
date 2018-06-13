@@ -4,7 +4,7 @@ public class StringIteration {
 
 	public static void main(String[] args) {
 		
-		String str1="abcadbcg";
+		String str1="abcadbcgbcabc";
 		String str2="bc";
 		int count = 0;
 		

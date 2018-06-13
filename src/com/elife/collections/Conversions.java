@@ -47,7 +47,11 @@ public class Conversions {
 		
 		List<String> mapToListOutput = mapObject.values().stream().collect(Collectors.toList());
 		
+		List<Integer> mapToListResult = mapObject.keySet().stream().collect(Collectors.toList());
+		
 		System.out.println("FinalOutput of values by using streams " +mapToListOutput);
+		
+		System.out.println("Result of KeySets" +mapToListResult);
 
 // Set to List 
 		
