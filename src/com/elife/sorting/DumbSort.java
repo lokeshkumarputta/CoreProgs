@@ -14,8 +14,8 @@ public class DumbSort {
 			System.out.print(i);
 		}
 		
-		
 		dumbSort(input);
+		
 		System.out.print("\n" + "After Sort ::");
 		for (int i : input) {
 			System.out.print(i);
@@ -32,7 +32,6 @@ public class DumbSort {
 
 		}
 		}
-		
 		
 	}
 
