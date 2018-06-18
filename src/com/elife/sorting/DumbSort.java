@@ -36,27 +36,27 @@ public class DumbSort {
 		
 	}
 
-	public static void dumbSort(int a[]) { 
+	public static void dumbSort(int arr[]) { 
 		boolean done = false;
 		while (!done) {
 			done = true;
 
-			for (int i = 0; i < (a.length - 2); i++) {
-				if (a[i] > a[i + 2]) {
+			for (int i = 0; i < (arr.length - 2); i++) {
+				if (arr[i] > arr[i + 2]) {
 					done = false;
-					int temp = a[i];
-					a[i] = a[i + 2];
-					a[i + 2] = temp;
+					int temp = arr[i];
+					arr[i] = arr[i + 2];
+					arr[i + 2] = temp;
 				}
 			}
 		}
 	} 
 
 	
-	public static int testCases(int a[]) {
+	public static int testCases(int arr[]) {
 		int index = -1;
-		for(int i=0; i<a.length-1; i++) {
-			if(a[i] > a[i+1]) {
+		for(int i=0; i<arr.length-1; i++) {
+			if(arr[i] > arr[i+1]) {
 				index = i;
 				return index;
 			}
