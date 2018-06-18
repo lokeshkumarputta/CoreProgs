@@ -10,8 +10,6 @@ import java.util.stream.Collectors;
 
 import com.elife.collections.Products;
 
-import sun.security.pkcs11.wrapper.Functions;
-
 public class Streams {
 
 	public static void main(String[] args) {

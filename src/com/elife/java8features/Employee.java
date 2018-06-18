@@ -20,6 +20,9 @@ public class Employee {
 		this.salary = salary;
 		this.age = age;
 	}
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getEmpName() {
 		return empName;
 	}
