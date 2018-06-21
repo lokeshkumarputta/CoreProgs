@@ -9,7 +9,7 @@ public class InheritanceTest {
 	
 		InheritanceTest test = new InheritanceTest();
 		
-		A b = new B();
+		OldType b = new NewType();
 		
 		System.out.println("Final Main Methods");
 		
@@ -18,20 +18,20 @@ public class InheritanceTest {
 	
 }
 
-class B extends C{
-	B(){
+class NewType extends C{
+	NewType(){
 		super();
 		System.out.println("Class B");
 		
 	}
 }
-class C extends A{
+class C extends OldType{
 	C(){
 	System.out.println("Class C");	
 	}
 }
-class A{
-	A(){
+class OldType{
+	OldType(){
 		System.out.println("Class A");
 		
 	}
