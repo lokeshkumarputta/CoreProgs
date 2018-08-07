@@ -26,6 +26,7 @@ public class Java8Features {
 		for (int i = 0; i < 10; i++) {
 			li.add(i);
 		}
+		
 		for (Iterator iterator = li.iterator(); iterator.hasNext();) {
 			Integer integer = (Integer) iterator.next();
 			System.out.println("integer value ::" + integer);
