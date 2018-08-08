@@ -82,10 +82,10 @@ public class Streams {
 		List<String> givenNumber = Arrays.asList("1","2","3");
 		System.out.println("Original List:" +givenNumber);
 		
-		List<Integer> evenNumbers = givenNumber.stream()
-				.map(integerconvert ->Integer.valueOf(integerconvert))
-				.filter(number -> number % 2 == 0)
-				.collect(Collectors.toList());
+		List<Integer> evenNumbers = givenNumber.stream()						// for looping using stream
+				.map(integerconvert ->Integer.valueOf(integerconvert))			// for converting String to integers using map
+				.filter(number -> number % 2 == 0)								// for even number filtering using filter
+				.collect(Collectors.toList());									// to return list of integers
 		
 		System.out.println("Even number list ::"  + evenNumbers);
 		
